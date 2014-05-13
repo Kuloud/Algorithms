@@ -32,7 +32,6 @@ public class Permutation {
 			out.append(in[i]);
 			used[i] = true;
 			doPermute(in, out, used, length, level + 1);
-			// System.out.println("跳出第一递归方法之后的i值为: "+ i);
 			used[i] = false;
 			out.setLength(out.length() - 1);
 		}
